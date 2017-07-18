@@ -5,13 +5,13 @@
 ### Docker build for a base raspbian image with Motion streaming video libraries
 
 This repo contains build files and instructions for a Docker image for Raspberry Pi3 (ARM), which will run the Motion libraries using a PS3 Eye cam on your Pi
-See Chris Barnes' [instructions](http://chris.gg/2012/07/using-a-ps3-eyetoy-with-the-raspberry-pi/) for reference, PS3 Eye and Motion library info, manual build
+See Chris Barnes' [instructions](http://chris.gg/2012/07/using-a-ps3-eyetoy-with-the-raspberry-pi/) for reference
 
 ### Initial setup:
 
 Manual pre-setup steps:
 * Connect a PS3 Eye camera to a USB port on your Raspberry Pi 3.
-* Flash a raspbian-based image (we tested with the Horizon raspbian image here)
+* Flash a raspbian-based image (we tested with the [Horizon](https://bluehorizon.network/) raspbian RPi3 image [here](https://bluehorizon.network/documentation/disclaimer))
 * Power up your Pi3
 
 You're done with pre-setup steps.
