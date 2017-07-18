@@ -27,6 +27,6 @@ COPY motion.conf /etc/motion/motion.conf
 
 EXPOSE 8080
 
-## To verify that the PS3 Eye camera is working, run motion (in non-daemon mode): 
-#  `docker run -it --privileged openhorizon/ps3eye-streamer-pi3 motion -n`   # Red / Blue lights should illuminate
+## To verify that the PS3 Eye camera is working, run motion (in non-daemon mode):
+#  `docker run -it --rm --privileged openhorizon/ps3eye-streamer-pi3 motion -n`   # Red / Blue lights should illuminate
 #  browse to http://<your Pi3's IP address>:8080 to see a live stream
