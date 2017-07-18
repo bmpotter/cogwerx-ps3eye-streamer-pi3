@@ -1,6 +1,6 @@
 ## Raspberry Pi3 with a PS3 Eye Cam
 
-![PS3 Eye Cam](https://ibm.box.com/v/ps3eye-streamer-rpi-PS3Eye-Cam)
+![PS3 Eye Cam](https://ibm.box.com/shared/static/brx56ds2iz0x4uxlj72vzqhcwt8wcrs8.jpg)
 
 ### Docker build for a base raspbian image with Motion streaming video libraries
 
