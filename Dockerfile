@@ -14,18 +14,22 @@ MAINTAINER dyec@us.ibm.com
 RUN apt-get update && apt-get -y install motion
 # +76MB
 
+EXPOSE 8080
+
 #RUN echo "daemon on" >> /etc/motion/motion.conf
 COPY motion.conf /etc/motion/motion.conf
 
 ## Use new motion settings file 
 #  daemon on (default, no output on output HDMI screen)
 #  width 640, #  height 480
-#  stream_motion on (always output frames (1 FPS even when no motion detected))
-#  stream_localhost off  (stream visible external to machine)
+#  stream_motion off (output frames 1 FPS when no motion detected))
 #  stream_port 8080
-#  webcontrol_port 8081 (TCP/IP port for the http server to listen on)
+#  stream_quality 55 (of 100%... helps optimize LAN bitrate)
+#  stream_localhost off  (stream visible external to machine)
+#  webcontrol_localhost off
 
-EXPOSE 8080
+
+#EXPOSE 8080
 
 ## To verify that the PS3 Eye camera is working, run motion (in non-daemon mode):
 #  `docker run -it --rm --privileged -p 8080:8080 openhorizon/ps3eye-streamer-pi3 motion -n`   # Red / Blue lights should illuminate
